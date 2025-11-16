@@ -19,7 +19,7 @@ export default function Signup() {
       email: data.email,
       password: data.password,
     };
-    await axios.post("https://kitabey-1.onrender.com/user/signup", userInfo)
+    await axios.post(`${Base_URL}/user/signup`, userInfo)
     .then((res)=>{
       console.log(res.data)
       if(res.data){

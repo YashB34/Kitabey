@@ -7,12 +7,13 @@ import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
+import { Base_URL } from "../config";
 export default function Course() {
   const[book , setBook] = useState([]);
   useEffect(()=>{
       const getBook = async()=>{
         try{
-         const res = await axios.get("https://kitabey-1.onrender.com/book");
+         const res = await axios.get(`${Base_URL}/book`);
           console.log(res.data)
           setBook(res.data)
         }catch(err){

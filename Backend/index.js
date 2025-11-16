@@ -6,7 +6,10 @@ import cors from "cors";
 import userRoute from "./Routes/userRoute.js"
 
 const app = express();
-app.use(cors());
+app.use(cors({
+    origin:"https://kitabey-sooty.vercel.app/",
+    credentials:true
+}));
 app.use(express.json());
 dotenv.config();
 

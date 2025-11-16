@@ -8,7 +8,7 @@ export default function Cards({item}) {
         <div className="card bg-base-100 shadow-xl hover:scale-105 duration-300 transition-all ease-in-out ">
   <figure>
     <img className="w-full h-64 object-cover rounded-t-xl"
-      src={`https://kitabey-1.onrender.com/uploads/${item.image}`}
+      src={`${Base_URL}/${item.image}`}
       alt="Book img" />
   </figure>
   <div className="card-body">
