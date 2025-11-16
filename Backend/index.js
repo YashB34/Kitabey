@@ -4,17 +4,17 @@ import dotenv from "dotenv";
 import bookRoute from "./Routes/bookRoute.js";
 import cors from "cors";
 import userRoute from "./Routes/userRoute.js"
-
+dotenv.config();
 const app = express();
 app.use(cors({
-    origin:"*",
+    origin:"https://kitabey-sooty.vercel.app/",
     credentials:true
 }));
 app.use(express.json());
-dotenv.config();
+
 
 const PORT = process.env.PORT || 4000
-const URL = process.env.MongoURL
+const URL = process.env.MONGO_URL
 // Connect to MongoDB
 try{
 mongoose.connect(URL)
