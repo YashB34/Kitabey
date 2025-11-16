@@ -7,7 +7,7 @@ import userRoute from "./Routes/userRoute.js"
 
 const app = express();
 app.use(cors({
-    origin:"https://kitabey-sooty.vercel.app/",
+    origin:"*",
     credentials:true
 }));
 app.use(express.json());

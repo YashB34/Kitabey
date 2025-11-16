@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Base_URL } from "../config";
 export default function Cards({item}) {
 
   return (
