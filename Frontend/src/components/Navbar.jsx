@@ -183,7 +183,7 @@ export default function Navbar() {
             ) : (
               <div>
                 <a
-                  className="bg-black text-white px-4 py-2 rounded-md hover:px-4 cursor-pointer duration-300 hover:bg-slate-950 "
+                  className="bg-black text-white px-4 py-2 rounded-md hover:px-4 cursor-pointer duration-300 hover:bg-slate-900 "
                   onClick={() =>
                     document.getElementById("my_modal_3").showModal()
                   }
