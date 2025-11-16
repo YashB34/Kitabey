@@ -1,0 +1,29 @@
+{
+  "name": "kitabey",
+  "version": "1.0.0",
+  "description": "MERN project",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/YashB34/Kitabey.git"
+  },
+  "author": "Yash",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/YashB34/Kitabey/issues"
+  },
+  "homepage": "https://github.com/YashB34/Kitabey#readme",
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "dotenv": "^17.2.3",
+    "express": "^5.1.0",
+    "mongoose": "^8.19.4",
+    "nodemon": "^3.1.11"
+  }
+}

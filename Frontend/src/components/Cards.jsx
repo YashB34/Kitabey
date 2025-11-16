@@ -4,8 +4,8 @@ export default function Cards({item}) {
 
   return (
     <>
-    <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 p-4 my-3">
-        <div className="card bg-base-100 shadow-xl hover:scale-105 duration-300 transition-all ease-in-out">
+    <div className="mt-4 grid grid-cols-1 sm:grid-cols-1 lg:grid-cols-1 gap-6 p-4 my-4 ">
+        <div className="card bg-base-100 shadow-xl hover:scale-105 duration-300 transition-all ease-in-out ">
   <figure>
     <img className="w-full h-64 object-cover rounded-t-xl"
       src={item.image}
