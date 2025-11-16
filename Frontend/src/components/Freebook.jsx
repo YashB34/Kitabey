@@ -11,7 +11,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get("https://kitabey-1.onrender.com/book");
         console.log(res.data);
         const data = res.data.filter((data) => data.price === 99);
         setBook(data);
