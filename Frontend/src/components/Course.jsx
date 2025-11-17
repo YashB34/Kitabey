@@ -5,6 +5,7 @@ import Footer from "./Footer";
 import Cards from "./Cards";
 // import list from "../components/list.json";
 import axios from "axios";
+import { Base_URL } from "../configjs/Base_url.js";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
 export default function Course() {
@@ -12,7 +13,7 @@ export default function Course() {
   useEffect(()=>{
       const getBook = async()=>{
         try{
-         const res = await axios.get("http://localhost:4001/book");
+         const res = await axios.get(`${Base_URL}/book`);
           console.log(res.data)
           setBook(res.data)
         }catch(err){

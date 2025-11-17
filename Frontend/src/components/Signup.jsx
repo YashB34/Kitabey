@@ -3,6 +3,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate} from "react-router-dom";
 import toast from "react-hot-toast";
+import { Base_URL } from "../configjs/Base_url.js";
 export default function Signup() {
   const location = useLocation();
   const navigate = useNavigate();
@@ -19,7 +20,7 @@ export default function Signup() {
       email: data.email,
       password: data.password,
     };
-    await axios.post("http://localhost:4001/user/signup", userInfo)
+    await axios.post(`${Base_URL}/user/signup`, userInfo)
     .then((res)=>{
       console.log(res.data)
       if(res.data){

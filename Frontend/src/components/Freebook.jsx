@@ -6,12 +6,13 @@ import Slider from "react-slick";
 import axios from "axios";
 // import list from "../components/list.json";
 import Cards from "./Cards";
+import { Base_URL } from "../configjs/Base_url.js";
 function Freebook() {
   const [book, setBook] = useState([]);
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get("http://localhost:4001/book");
+        const res = await axios.get(`${Base_URL}/book`);
         console.log(res.data);
         const data = res.data.filter((data) => data.price === 99);
         setBook(data);
