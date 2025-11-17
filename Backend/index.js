@@ -7,7 +7,7 @@ import userRoute from "./Routes/userRoute.js"
 dotenv.config();
 const app = express();
 app.use(cors({
-    origin:"https://kitabey-psxs9t7yk-yashs-projects-54088998.vercel.app/",
+    origin:"https://kitabey-sooty.vercel.app",
     credentials:true,
     methods:["GET","POST","PUT","DELETE"],
     allowedHeaders:["Content-Type", "Authorization"]
