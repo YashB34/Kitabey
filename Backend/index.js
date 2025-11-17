@@ -15,7 +15,7 @@ app.use(cors({
 app.use(express.json());
 
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4001
 const URL = process.env.MONGO_URL
 // Connect to MongoDB
 try{
