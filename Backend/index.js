@@ -20,8 +20,8 @@ console.log("Connected to MongoDB");
 console.log(err);
 }
 //routes
-app.use("api/book" , bookRoute);
-app.use("api/user", userRoute);
+app.use("/api/book" , bookRoute);
+app.use("/api/user", userRoute);
 
 
 app.listen(PORT , ()=>{
