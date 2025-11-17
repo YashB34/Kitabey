@@ -11,7 +11,7 @@ app.use(express.json());
 dotenv.config();
 
 const PORT = process.env.PORT || 4001
-const URL = process.env.MongoURL
+const URL = process.env.MONGO_URL
 // Connect to MongoDB
 try{
 mongoose.connect(URL)
