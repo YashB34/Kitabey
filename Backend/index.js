@@ -4,11 +4,11 @@ import dotenv from "dotenv";
 import bookRoute from "./Routes/bookRoute.js";
 import cors from "cors";
 import userRoute from "./Routes/userRoute.js"
-
+dotenv.config();
 const app = express();
 app.use(cors());
 app.use(express.json());
-dotenv.config();
+
 
 const PORT = process.env.PORT || 4001
 const URL = process.env.MONGO_URL
