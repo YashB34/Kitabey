@@ -10,7 +10,7 @@ app.use(cors());
 app.use(express.json());
 dotenv.config();
 
-const PORT = process.env.PORT || 4000
+const PORT = process.env.PORT || 4001
 const URL = process.env.MongoURL
 // Connect to MongoDB
 try{
