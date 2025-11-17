@@ -3,7 +3,7 @@ import axios from "axios";
 import { useForm } from "react-hook-form";
 import { Link, useLocation, useNavigate} from "react-router-dom";
 import toast from "react-hot-toast";
-import { Base_URL } from "../config";
+import { Base_URL } from "../Base_URL";
 export default function Signup() {
   const location = useLocation();
   const navigate = useNavigate();

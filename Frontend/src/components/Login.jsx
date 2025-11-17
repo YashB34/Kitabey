@@ -3,7 +3,7 @@ import { useForm } from "react-hook-form";
 import { Link } from "react-router-dom";
 import axios from "axios";
 import toast from "react-hot-toast";
-import { Base_URL } from "../config";
+import { Base_URL } from "../Base_URL";
 export default function Login() {
   const {
     register,

@@ -7,7 +7,8 @@ import Cards from "./Cards";
 import axios from "axios";
 import { Link } from "react-router-dom";
 import { useEffect } from "react";
-import { Base_URL } from "../config";
+import { Base_URL } from "../Base_URL";
+// import { Base_URL } from "../Base_URL";
 export default function Course() {
   const[book , setBook] = useState([]);
   useEffect(()=>{
