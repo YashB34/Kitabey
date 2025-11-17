@@ -13,7 +13,11 @@ export default function Course() {
   useEffect(()=>{
       const getBook = async()=>{
         try{
-         const res = await axios.get(`${Base_URL}/book/all`);
+        const res = await axios.get(`${Base_URL}/book/all`, {
+  headers: {
+    Authorization: localStorage.getItem("token")
+  }
+});
           console.log(res.data)
           setBook(res.data)
         }catch(err){
