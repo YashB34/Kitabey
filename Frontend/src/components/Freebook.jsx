@@ -12,7 +12,7 @@ function Freebook() {
   useEffect(() => {
     const getBook = async () => {
       try {
-        const res = await axios.get(`${Base_URL}/book/all`);
+        const res = await axios.get(`${Base_URL}/book`);
         console.log(res.data);
         const data = res.data.filter((data) => data.price === 99);
         setBook(data);
